@@ -12,11 +12,11 @@
         
         function sort_2way($array, $order)
         {
-            if ($order == "true") {
+            if ($order == true) {
                 sort($array);
                 echo "昇順にソートします。<br>";
 
-            } else if ($order == "false") {
+            } else if ($order == false) {
                 rsort($array);
                 echo "降順にソートします。<br>";
             }
@@ -31,10 +31,10 @@
         $nums = [15, 4, 18, 23, 10];
         
         // 昇順にソートして出力
-        sort_2way($nums, "true");
+        sort_2way($nums, true);
         
         // 降順にソートして出力
-        sort_2way($nums, "false");
+        sort_2way($nums, false);
 
         ?>
 
